@@ -1,2 +1,2 @@
-const funcoes = require('./DIO/Node JS/importacao/auxiliar.js');
+const funcoes = require('./auxiliar.js');
 console.log(funcoes.print(10));
