@@ -1,0 +1,46 @@
+<!DOCTYPE HTML >
+<html>
+<head>
+    <title>Dominando Jquery</title>
+    <script type="text/javascript" src="../js/jquery/jquery.js"></script>
+
+</head>
+<body>
+<div id="total">R$ 29,90</div>
+</body>
+<script type="text/javascript">
+
+var total = document.getElementById("total");
+//alert(total.innerHTML);
+
+
+
+//var total = ("R$ 29,90");
+//alert("total");
+//document.write (total);
+
+
+const num = [3,5,6,8,9,3,5,6,3];
+
+let soma = 0;
+let media =0;
+
+for (let i = 0; i < num.length; i++ ){
+	soma = soma + num[i];
+	media = soma/num.length;
+	if(num[i]>num[i-1])
+	console.log (num[i]+" e maior que "+num[i-1]);
+	else
+	if(num[i-1]){
+	console.log (num[i]+" e menor que "+num[i-1]);
+	}
+	
+	}
+
+//document.write(media);
+
+//document.write("media")
+
+//document.write(drawBox(blue));
+</script>
+</html>
