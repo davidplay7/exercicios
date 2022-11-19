@@ -29,7 +29,7 @@ body {
   height: 100%;
   
   /*background: rgba(136, 246, 251, 0.3);*/
-  background: darkblue;
+  background: #18e018;
   border-radius: inherit;
   animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
 }
