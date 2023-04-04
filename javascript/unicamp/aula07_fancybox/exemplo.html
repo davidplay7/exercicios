@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exemplo</title>
+
+<style type="text/css">
+	.thumb{
+		float: left;
+		width: 30%;
+		padding: 1.49%;
+		border: 1px #ccc solid;
+	}
+
+</style>
+
+	<!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+
+	<!-- mousescroll -->
+<script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- fancyBox -->
+<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js"></script>
+
+	<!-- helpers, botoes, thumbnail e media -->
+<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".fotos").fancybox();
+	});
+</script>
+
+	
+</head>
+
+<body>
+
+<a  href="http://www.flatschart.com/fotos/fabio_flatschart.jpg" class="fotos" rel="conjunto" title="Fabio Flatschart" alt="Fabio Flatschart">
+<img class="thumb" src="http://www.flatschart.com/fotos/fabio_flatschart.jpg" alt="Fabio Flatschart" title="Fabio Flatschart" />
+</a>
+
+<a  href="http://www.dynaclic.be/images/slides/javascript.png" class="fotos" rel="conjunto" title="Javascript" alt="Javascript">
+<img class="thumb" src="http://www.dynaclic.be/images/slides/javascript.png" alt="Javascript" title="Javascript" />
+</a>
+
+<a  href="https://lh6.googleusercontent.com/-IS7UqdHw5yQ/AAAAAAAAAAI/AAAAAAAAJ28/4Lobp4sENIM/photo.jpg" class="fotos" rel="conjunto" title="Gabriel Dualiby" alt="Gabriel Dualiby">
+<img class="thumb" src="https://lh6.googleusercontent.com/-IS7UqdHw5yQ/AAAAAAAAAAI/AAAAAAAAJ28/4Lobp4sENIM/photo.jpg" alt="Gabriel Dualiby" title="Gabriel Dualiby" />
+</a>
+
+</body>
+</html>

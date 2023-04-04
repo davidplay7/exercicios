@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exemplo</title>
+
+	
+	<link rel="stylesheet" href="nivo-slider/nivo-slider.css" type="text/css" media="screen" />
+	
+
+	<link rel="stylesheet" href="nivo-slider/themes/default/default.css" type="text/css" media="screen" />
+	
+    <link rel="stylesheet" href="nivo-slider/themes/light/light.css" type="text/css" media="screen" />
+	
+    <link rel="stylesheet" href="nivo-slider/themes/dark/dark.css" type="text/css" media="screen" />
+	
+    <link rel="stylesheet" href="nivo-slider/themes/bar/bar.css" type="text/css" media="screen" />
+	
+    <link rel="stylesheet" href="nivo-slider/demo/style.css" type="text/css" media="screen" />
+
+
+	<!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+	
+<script src="nivo-slider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+	
+	<div class="slider-wrapper theme-default">
+    <div class="ribbon"></div>
+	
+	<div id="slider" class="nivoSlider">
+		
+		<img  src="http://www.flatschart.com/fotos/fabio_flatschart.jpg" alt="Fabio Flatschart" title="Fabio Flatschart" />
+
+		<img src="http://www.dynaclic.be/images/slides/javascript.png" alt="Javascript" title="Javascript" />
+
+		<img src="https://lh6.googleusercontent.com/-IS7UqdHw5yQ/AAAAAAAAAAI/AAAAAAAAJ28/4Lobp4sENIM/photo.jpg" alt="Gabriel Dualiby" title="Gabriel Dualiby" />
+		
+	</div>
+	
+	<div id="htmlcaption" class="nivo-html-caption">Exemplo de Legenda</div>
+		
+	</div>
+
+
+</body>
+	
+	<script type="text/javascript">
+	//$(document).ready(function(){});
+	
+	$(window).load(function() {
+		
+	$('#slider').nivoSlider({
+		effect: 'fold',               // tipo de efeito: 'fold,fade,sliceDown,sliceDownLeft,sliceUp,sliceUpLeft,sliceUpDown,sliceUpDownLeft,random,slideInRight,slideInLeft,boxRandom,boxRain,boxRainReverse,boxRainGrow,boxRainGrowReverse'
+    slices: 15,                     // Fatias da animação
+    boxCols: 8,                     // Caixas de Animação
+    boxRows: 4,                     // Linhas de animação
+    animSpeed: 500,                 // velocidade de transição
+    pauseTime: 3000,                // tempo de exibição
+    startSlide: 0,                  // slide inicial
+    directionNav: true,             // objetos de navegação
+    controlNav: true,               // controle da navegação
+    controlNavThumbs: false,        // Thumbnails de navegação
+    pauseOnHover: true,             // parar quando o mouse estiver sobre
+    manualAdvance: false,           // forçar animações manuais
+    prevText: 'Prev',               // texto da navegação voltar
+    nextText: 'Next',               // texto da navegação próxima
+    randomStart: false,             // começar em slide aleatório
+    beforeChange: function(){},     // gatilhos antes da transição de um slide
+    afterChange: function(){},      // gatilhos depois da transição de um slide
+    slideshowEnd: function(){},     // gatilhos depois da exibição de todos os slides
+    lastSlide: function(){},        // gatilhos depois do último slide
+    afterLoad: function(){}         // gatilhos depois do carregamento do slider
+		});
+	});
+
+	</script>
+	
+</html>
